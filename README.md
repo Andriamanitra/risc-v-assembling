@@ -4,9 +4,9 @@ I've wanted to understand computers on a lower level for a while now, but the en
 complexity of the older x86 and ARM instruction sets have made the topic rather
 intimidating to approach. With more powerful RISC-V hardware slowly becoming available
 I felt like this was a good time to jump on the hype train, so I bought a StarFive
-Vision 2 single-board RISC-V computer. This repository is for documenting my journey of
-learning how to use it and specifically the RISC-V assembly language. I'm publishing it
-because I thought some of my notes could be useful to someone else going through the
+VisionFive 2 single-board RISC-V computer. This repository is for documenting my journey
+of learning how to use it and specifically the RISC-V assembly language. I'm publishing
+it because I thought some of my notes could be useful to someone else going through the
 same process (it seems there's not very much beginner-friendly RISC-V material
 available yet), and I'm too lazy to make a blog. Maybe I will edit this content down
 into a more concise tutorial format eventually (if I ever learn enough to feel like I
