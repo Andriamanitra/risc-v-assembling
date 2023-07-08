@@ -1,13 +1,13 @@
 .PHONY: run clean
 
-run: prog
-	./prog "this _should_ all be upper cased!"
+run: build/prog
+	build/prog "this _should_ all be upper cased!"
 
-prog: main.c to_upper.o
-	gcc -o prog main.c to_upper.o
+build/prog: main.c build/to_upper.o
+	gcc -o build/prog main.c build/to_upper.o
 
-to_upper.o: to_upper.s
-	as -o to_upper.o to_upper.s
+build/to_upper.o: to_upper.s
+	as -o build/to_upper.o to_upper.s
 
 clean:
-	rm -f *.o prog
+	rm -r build
