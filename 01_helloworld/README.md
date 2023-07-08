@@ -57,7 +57,7 @@ The resulting `hello` executable file is 1.3K in size, which is a lot more than 
 * `.global` directive marks a symbol as global, which is necessary for `ld` to find it
 * the `ld` linker uses `_start` label for the entry point by default, although it can be overridden with a command line option
 * `.data` segment contains global and static variables. It has a fixed size but the data in it can change.
-* `.ascii` directive places characters in the current location. `.string` or `.asciz` would also work here (unsure if there's a difference)
+* `.ascii` directive places characters in the current location. `.string` (or its alias `.asciz`) would also work here (they add a terminating NULL byte `'\0'` to the string).
 * `man syscall` tells about the calling convention (which registers are used for args, return values) in different architectures
 * `man syscalls` lists all the system calls (each syscall has its own `man` page for details)
 * The registers have aliases that reflect their typical usage, for example `x0` = `zero`, `x1` = `ra`, `x10` = `a0`.
