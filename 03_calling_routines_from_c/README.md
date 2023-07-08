@@ -60,4 +60,4 @@ Note that on RV32E (variant meant for resource-constrained embedded applications
     * `LB|LBU|LH|LHU|LW|LWU|LD <register>, <label>` - pseudo-instruction that stores data from register to address pointed to by label
     * `RET` – pseudo-instruction to jump back to return address (`ra`)
     * `JAL <label>` - pseudo-instruction to set the return address (`ra`) and jump to a label
-    * `JALR <target register>, <register>, <immediate value> - stores PC+4 in target register, jumps to address calculated by adding immediate value to value of register
+    * `JALR <target register>, <register>, <offset>` - stores PC+4 in target register, jumps to address calculated by adding offset to value of register
